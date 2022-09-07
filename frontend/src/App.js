@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { useState } from 'react';
 import GetContract from './hooks/GetContract';
 import addABI from './ABI/addABI.json';
+import EventList from './components/EventList';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <input className=' bg-slate-900 border-[2px] border-slate-700 rounded-xl px-4 py-2 text-xl text-white' onChange={(e)=>setN2(e.target.value)} />
       </div>
       <button className='bg-white text-slate-900 px-5 py-2 rounded-xl mt-4 ' onClick={()=>Sum()}  >Get Sum</button>
+    <EventList/>
     </div>
     </>
   );
