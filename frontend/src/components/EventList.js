@@ -10,7 +10,7 @@ const EventList = () => {
     },[])
 
     const getEvents=async()=>{
-        axios.get('http://localhost:3000/api/getAll')
+        axios.get('http://localhost:8080/getAll')
         .then((response) => {
             setEvents(response.data);
         });
